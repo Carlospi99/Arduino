@@ -1,0 +1,23 @@
+int switchState = 0;
+void setup() {
+  PinMode(3, OUTPUT);
+  PinMode(4, OUTPUT);
+  PinMode(5, OUTPUT);
+  PinMode(2, OUTPUT);
+}
+void loop(){
+  switchState = digitalRead(2);
+//this is a coment
+  if (switchState == LOW) {
+//  the button is not pressed
+
+    digitalwrite(3, HIGH); //gren led
+    digitalwrite(4, LOW); //red led
+    digitalwrite(5, LOW); //red led
+  }
+  else { //the button is pressed
+    digitalwrite(3, LOW); //gren led
+    digitalwrite(4, LOW); //red led
+    digitalwrite(5, HIGH); //red led  
+
+    delay(250); //wait for a quearter 
