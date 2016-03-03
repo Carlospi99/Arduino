@@ -11,19 +11,19 @@ void loop(){
   if (switchState == LOW) {
 //  the button is not pressed
 
-    digitalwrite(3, HIGH); //gren led
-    digitalwrite(4, LOW); //red led
-    digitalwrite(5, LOW); //red led
+    digitalWrite(3, HIGH); //gren led
+    digitalWrite(4, LOW); //red led
+    digitalWrite(5, LOW); //red led
   }
   else { //the button is pressed
-    digitalwrite(3, LOW); //gren led
-    digitalwrite(4, LOW); //red led
-    digitalwrite(5, HIGH); //red led  
+    digitalWrite(3, LOW); //gren led
+    digitalWrite(4, LOW); //red led
+    digitalWrite(5, HIGH); //red led  
 
     delay(250); //wait for a quearter second
     //toogled leds
-    digitalwrite(4, HIGH); //red led
-    digitalwrite(5, LOW); //red led
+    digitalWrite(4, HIGH); //red led
+    digitalWrite(5, LOW); //red led
     delay(250); //wait for a quearter secon
   }
   } //go back to the beggining of the loop
