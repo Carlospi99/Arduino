@@ -20,4 +20,11 @@ void loop(){
     digitalwrite(4, LOW); //red led
     digitalwrite(5, HIGH); //red led  
 
-    delay(250); //wait for a quearter 
+    delay(250); //wait for a quearter second
+    //toogled leds
+    digitalwrite(4, HIGH); //red led
+    digitalwrite(5, LOW); //red led
+    delay(250); //wait for a quearter secon
+  }
+  } //go back to the beggining of the loop
+  
