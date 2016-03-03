@@ -1,13 +1,13 @@
 int switchState = 0;
 void setup() {
-  PinMode(3, OUTPUT);
-  PinMode(4, OUTPUT);
-  PinMode(5, OUTPUT);
-  PinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(2, INPUT);
 }
 void loop(){
   switchState = digitalRead(2);
-//this is a coment
+//this is a comment
   if (switchState == LOW) {
 //  the button is not pressed
 
